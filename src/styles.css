@@ -1,0 +1,28 @@
+:root {
+    --colorWhite: rgb(255, 255, 255);
+    --colorBlack: rgb(0, 0, 0);
+    --colorRedDark: rgb(61, 0, 0);
+    --colorRedMid: rgb(149, 1, 1);
+    --colorRed: rgb(255, 0, 0);
+}
+.bg-black {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite);
+}
+
+.bg-red-dark {
+    background-color: var(--colorRedDark);
+    color: var(--colorWhite);
+}
+
+.color-red {
+    color: var(--colorRed);
+}
+
+.color-red-mid {
+    color: var(--colorRedMid);
+}
+
+.color-red-dark {
+    color: var(--colorRedDark);
+}

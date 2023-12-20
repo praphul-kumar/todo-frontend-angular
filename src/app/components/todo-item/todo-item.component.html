@@ -1,0 +1,14 @@
+<div class="d-flex flex-row justify-content-between mb-2">
+    <div class="p-2">
+        <p class="mb-1">{{ todo.content }}</p>
+    </div>
+    <div class="p-2 text-center">
+        <a href="#" (click)="editTodo(todo)" class="text-info mx-2">
+            <i class="bi bi-pencil-square"></i>
+        </a>
+        <a href="#" (click)="removeTodo(todo)" class="text-danger mx-2">
+            <i class="bi bi-trash"></i>
+        </a>
+    </div>
+</div>
+<hr class="">

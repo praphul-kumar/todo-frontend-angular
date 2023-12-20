@@ -1,0 +1,29 @@
+
+.top-right-group {
+    position: absolute;
+    min-width: 100px;
+    min-height: 50px;
+    top: -80px;
+    right: 0;
+
+    padding: 15px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    background-color: var(--colorRedDark);
+    color: var(--colorWhite);
+    outline: none;
+    border: 1.4px solid var(--colorRedMid);
+    border-radius: 15px;
+}

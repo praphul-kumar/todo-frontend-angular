@@ -1,0 +1,62 @@
+<div class="container main-container">
+	<div class="card mt-3">
+		<div class="card-header">
+			<h4>Todo List:</h4>
+		</div>
+		<div class="card-body">
+			<div class="" *ngFor="let todo of todos">
+				<app-todo-item [todo]="todo" (deleteTodo)="deleteTodo($event)" (updateTodo)="updateTodo($event)"></app-todo-item>
+			</div>
+		</div>
+		<!--  -->
+	</div>
+
+	<div class="bottom-right-group ">
+        <button
+          #openTodoModal
+          class="add-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#todoModal"
+        >
+          <i class="bi bi-plus"></i>
+        </button>
+	</div>
+	
+</div>
+
+<!-- Add TODO Modal -->
+<div
+  class="modal fade"
+  id="todoModal"
+  tabindex="-1"
+  aria-labelledby="todoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" id="todoModalLabel">Add New TODO</h1> -->
+        <button
+		  #closebutton
+          type="button"  
+          class="btn-close color-red"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+		<input type="hidden" name="todoId" id="todoId" [(ngModel)]="currTodoId">
+
+        <input
+		  #todoInput
+          type="text"
+          name="todo"
+          class="form-control"
+          [(ngModel)]="todoContent"
+		  (keydown.enter)="onEnterPressed($event)"
+          placeholder="Enter..."
+        />
+      </div>
+    </div>
+  </div>
+</div>

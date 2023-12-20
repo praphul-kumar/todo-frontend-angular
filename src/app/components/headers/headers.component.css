@@ -1,0 +1,18 @@
+.c-nav {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorRed) !important;
+    padding-inline: 70px;
+}
+
+.c-nav .nav-link {
+    color: var(--colorRedMid);
+}
+
+.c-nav .nav-link:hover, .c-nav .nav-link.active {
+    color: var(--colorRed);
+}
+
+.c-nav .navbar-brand {
+    color: var(--colorRed);
+    font-weight: 700;
+}
